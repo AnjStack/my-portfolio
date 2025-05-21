@@ -6,20 +6,24 @@
   
   <title>landing page</title>
   <link rel="stylesheet" href="index.css">
+ 
 </head>
 <body>
+ 
+
   <!-- header section start -->
-  <header>
-    <h1 class="tittle">MyPortfolio</h1>
-    <div class="container">
+  <header id="main-head">
+  
+    <h1 class="tittle"  data-aos="fade-right">MyPortfolio</h1>
+    <div class="container" id="links">
      
-
-      <a href="#main-section" id="nav_item">Home</a>
-      <a href="#login-form" id="nav_item">Contact</a>
-      <a href="#about" id="nav_item">About</a>
-      <a href="#txto" id="nav_item">Service</a>
-      <a href="#projects" id="nav_item">Projects</a>
-
+<div class="nav-item" id="nav-link"> <a href="#main-section" id="navs_item">Home</a>
+  <a href="#login-form" id="navs_item">Contact</a>
+  <a href="#about" id="navs_item">About</a>
+  <a href="#txto" id="navs_item">Service</a>
+  <a href="#projects" id="navs_item">Projects</a>
+</div>
+     
     </div>
 
   </header>
@@ -28,15 +32,19 @@
     <div id="profile">
      
     </div>
-<div id="content">   <div  id="main-head"><h5>WELCOME! </h5>  TO <h2>MY PORTFOLIO</h2>
-  <p>I  AM A <H1>FULL STACK WEB DEVELOPER</H1></p>
-  <p id="para">Hello ! my name is Anjali sharma and i am a  <h6>full stack web developer</h6>with 5 year experience....</p>
-</div>
-</div>
+    <div id="bio">
+
+      <div id="content">   <div  id="main-head"><h5>WELCOME! </h5>  TO <h2>MY PORTFOLIO</h2>
+        <p>I  AM A <H1>FULL STACK WEB DEVELOPER</H1></p>
+        <p id="para">Hello ! my name is Anjali sharma and i am a  <h6>full stack web developer</h6>with 5 year experience....</p>
+      </div>
+      </div>
+    </div>
+
   </section>
 
 <!-- skills -->
-<section id="home" class="hero-section">
+<section id="home" class="hero-section" data-aos="fade-up">
   <div class="hero-content">
 
     <p id="txto">
@@ -109,13 +117,13 @@
           <img src="image/resturent.png" alt="resturent website" />
         </div>
         <div class="project-content">
-          <h3>Resturent website</h3>
+          <h3>Amazon Clone</h3>
           <p>
             A brief description of the project, highlighting the
             technologies used and the main features.
           </p>
           <a
-            href="http://127.0.0.1:5500/resturent%20website/index.html"
+            href="https://vercel.com/anjstacks-projects/amazon-clone/5exFfFbuN9QdoWY4AofQWCgffbT4"
             class="btn"
             >View Project</a
           >
@@ -230,7 +238,8 @@
     </div>
 
 
-    <form action="https://formsubmit.co/anjalisharmabarh2480@gmail.com" method="POST">
+    <form action="https://formsubmit.co/anjalisharmabarh2480@gmail.com" method="POST" class="contact_form">
+      <h1 class="contact">CONTACT US</h1><br><br>
       <input type="text" name="name" placeholder="Name" required><br><br>
       <input type="email" name="email" placeholder="Email" required><br><br>
       <textarea name="message" placeholder="Message" required></textarea><br><br>
@@ -285,10 +294,11 @@
     <div class="footer-section">
       <h2>Download Resume</h2>
       <a
-        href="portfolio/resume/Anjali Sharma.pdf"
+        href="https://drive.google.com/file/d/1DNsNgaaOdiXPUItMVnRqbF6lcwS-Yp4c/view?usp=sharing"
         class="download-link"
         download
-        >Download My Resume</a
+        
+        ><button>Download My Resume</button></a
       >
     </div>
   </div>
